@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Laia Jimenez">
+    <title>Generar Taula</title>
+
+    <style>
+        table{
+
+            width: 40%;
+            text-align: center;
+            border-color: rgb(254, 71, 163); 
+        }
+
+        th{
+            width: 20px;
+        }
+
+        
+        #boton1:hover, #boton2:hover{
+            box-shadow: 2px 2px rgb(242, 14, 136);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <button id="boton1" type="submit">Generar Tabla</button>
+    <button id="boton2" type="submit">Borrar Tabla</button>
+    <br><br>
+    
+    <table border="1">
+        <thead>        
+            <tr>
+                <th>
+                    Ciutats
+                </th>
+                <th>
+                    Països
+                </th>
+                <th>
+                    Continents
+                </th>
+            </tr>
+        </thead>
+        <tbody id="generarTabla"></tbody>
+    </table>
+    <script src="./generaTaula.js"></script>
+    
+</body>
+</html>
